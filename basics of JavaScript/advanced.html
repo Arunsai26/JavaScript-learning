@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="my-button">Click me</button>
+    <script>
+    //     let alarm=function(){
+    //         console.log(`tellarindi ,nidra levu ${new Date()}`);
+    //     };
+    //     console.log('alarm set')
+    //    let timerId= setTimeout(alarm,4000);
+    //    console.log(timerId)
+    //    clearTimeout(timerId);
+
+    //    let intervalId=setInterval(alarm,1000);
+    // //    clearInterval(intervalId)
+    //    //setting up interval for 5 s
+    //    setTimeout(()=>clearInterval(intervalId),5000);
+
+       let buttonElement=document.querySelector('#my-button');
+let behaviour=event=>console.log('I am clicked');
+buttonElement.addEventListener('click',behaviour);
+
+let printDate=event=>console.log(new Date());
+buttonElement.addEventListener('click',printDate);
+
+
+let arr=[1,2,3,4,5,6,7,8,9];
+let odds=arr.filter((value,index)=>{
+    if(value%2===1){
+        return true;
+    }
+    else{
+        return false;
+    }
+})
+console.log(odds);
+//square of each number in an array
+let squares=arr.map(num=>num*num);
+console.log(squares);
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>
