@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         let figure={
+//     name:'paiting',
+//     rate:'4000', 
+//     displayprice:function(){
+//         console.log(`rate of the painting is ${this.rate}`)
+//     }
+// }
+    
+// figure.displayprice()
+// destructuring 
+// 
+let myntra={
+    name:'jeans',
+    size:'s',
+    fit:'slim-fit',
+    'delivery-time':'tomorrow 9pm'
+
+}
+// let copy=myntra
+//    console.log(myntra)
+//    copy.fit='l'
+//    console.log(myntra)
+// copy.name='shirt'
+// console.log(myntra)
+// console.log([myntra['delivery-time']])
+
+console.log(myntra)
+// let a=JSON.stringify(myntra)
+// console.log(typeof a)
+// console.log(a)
+
+//converting into object with parse like
+// let b=JSON.parse(a)
+// console.log(typeof b)
+// console.log(b)
+let c=localStorage.setItem('myntra',JSON.stringify('myntra'))
+console.log(c)
+
+
+
+    </script>
+    
+</body>
+</html>

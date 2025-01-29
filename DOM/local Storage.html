@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local Storage</title>
+</head>
+<body>
+    <script>
+     let myntra={
+    name:'jeans',
+    size:'s',
+    fit:'slim-fit',
+    'delivery-time':'tomorrow 9pm'
+
+}
+let c=localStorage.setItem('myntra',(JSON.stringify(myntra)))
+console.log(localStorage.getItem('myntra'))
+localStorage.removeItem('size')
+localStorage.clear()
+    </script>
+    
+</body>
+</html>

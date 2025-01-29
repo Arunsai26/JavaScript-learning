@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mydiv">This is the div</div>
+    <script>
+    let mydate=new Date()
+    console.log(mydate)
+    //methods
+    console.log(mydate.getTimezoneOffset())
+    console.log(document.location)
+
+    let o=document.createElement('Button')//virtually button is created in the memory
+    document.innerText='Click me'
+    // we have to add the button , to the div using appendchild() method
+    document.querySelector('.mydiv').appendChild(o)
+    // docremoveChild(ument.querySelector('.mydiv').
+    
+
+
+
+</script>
+    
+</body>
+</html>
